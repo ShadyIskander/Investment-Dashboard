@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Insurance</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Merriweather:wght@700&display=swap');
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 150px; /* Adjust as needed */
+            height: auto;
+            z-index: 10;
+        }
+
+        #lifeSelection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #E8DAB2;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #lifeSelection .title {
+            position: relative;
+            top: -30px;
+            font-family: "Merriweather", serif; /* Consistent with the second code */
+            font-size: 36px; /* Adjusted to match the second code */
+            font-weight: bold; /* Already bold, consistent with the second code */
+            color: #2c3e50; /* Pure white for consistency */
+            text-align: center;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Softer and lighter shadow */
+            letter-spacing: 1px; /* Slight spacing for clarity */
+        }
+
+        #lifeSelection .button-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; /* Adjusted to match the second code */
+            width: 50%;
+        }
+
+        #lifeSelection .life-button {
+            font-family: Arial, sans-serif; /* Consistent with the second code */
+            width: 100%;
+            padding: 15px; /* Adjusted to match the second code */
+            font-size: 36px; /* Adjusted to match the second code */
+            font-weight: bold; /* Added to match the second code */
+            text-decoration: none;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+            border-radius: 10px; /* Adjusted to match the second code */
+            border: none;
+            background: #4F6D7A;
+            color: #ffffff;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #lifeSelection .life-button:hover {
+            background: #2c3e50;
+            transform: scale(1.05);
+        }
+
+        .back-button {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Floating Icons */
+        #lifeSelection .floating-icons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        #lifeSelection .floating-icons i {
+            position: absolute;
+            font-size: 24px;
+            color: rgba(244, 208, 63, 0.5);
+            animation: floatIcon 5s infinite ease-in-out;
+        }
+
+        #lifeSelection .floating-icons i:nth-child(1) { top: 25%; left: 25%; }
+        #lifeSelection .floating-icons i:nth-child(2) { top: 25%; left: 75%; }
+        #lifeSelection .floating-icons i:nth-child(3) { top: 75%; left: 25%; }
+
+        @keyframes floatIcon {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="lifeSelection">
+        <div class="title">Investment Navigator</div>
+        <img id="logo" src="logo.png" alt="Company Logo">
+        <div class="button-grid">
+            <a href="Investments.html" class="life-button">Investment Dashboard </a>
+            <a href="contacts.html" class="life-button">Internal Fund Managers Contact Details</a>
+        </div>
+        <div class="floating-icons">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shield-alt"></i>
+            <i class="fas fa-stethoscope"></i>
+        </div>
+    </div>
+</body>
+</html>
